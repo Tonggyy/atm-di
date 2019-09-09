@@ -13,8 +13,9 @@ public class DataSource {
     /**
      * @param filename the name of the customer file
      */
-    public DataSource(String filename) {
-        this.filename = filename;
+    public DataSource() {
+       this.filename =  "customers.txt";
+
     }
 
     /**
