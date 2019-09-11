@@ -1,9 +1,12 @@
-package atm;
+package atmAnotation;
+
+import org.springframework.stereotype.Component;
 
 /**
  * A bank account has a balance that can be changed by
  * deposits and withdrawals.
  */
+
 public class Account {
    private double balance;
 
@@ -21,8 +24,8 @@ public class Account {
    public Account(double initialBalance) {
       balance = initialBalance;
    }
-
-   /**
+ 
+   /** 
     * Deposits money into the account.
     * @param amount the amount of money to withdraw
     */
@@ -30,7 +33,7 @@ public class Account {
       balance = balance + amount;
    }
 
-   /**
+   /** 
     * Withdraws money from the account.
     * @param amount the amount of money to deposit
     */
@@ -38,11 +41,12 @@ public class Account {
       balance = balance - amount;
    }
 
-   /**
+   /** 
     * Gets the account balance.
     * @return the account balance
     */
    public double getBalance() {
-      return balance;
+      return balance; 
    }
 }
+

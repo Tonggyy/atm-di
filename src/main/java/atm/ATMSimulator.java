@@ -1,15 +1,20 @@
-package atm;
+package atmAnotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 /**
- A text-based simulation of an automatic teller machine.
+   A text-based simulation of an automatic teller machine.
  */
+@Component
 public class ATMSimulator {
 
 	private ATM atm;
-
+	@Autowired
 	public ATMSimulator(ATM atm) {
 		this.atm = atm;
 	}
@@ -63,8 +68,8 @@ public class ATMSimulator {
 				else if (command.equalsIgnoreCase("E"))
 					System.exit(0);
 				else
-					System.out.println("Illegal input!");
-			}
+					System.out.println("Illegal input!");                                    
+			}         
 		}
 	}
 }

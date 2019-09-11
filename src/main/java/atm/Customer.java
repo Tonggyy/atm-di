@@ -1,8 +1,11 @@
-package atm;
+package atmAnotation;
+
+import org.springframework.stereotype.Component;
 
 /**
  * A bank customer with a checking and a savings account.
  */
+
 public class Customer {
 
    private int customerNumber;
