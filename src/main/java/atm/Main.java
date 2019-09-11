@@ -10,5 +10,6 @@ public class Main {
         ATMSimulator atmSimulator = context.getBean("atmSimulator", ATMSimulator.class);
         atmSimulator.run();
 
+
     }
 }
